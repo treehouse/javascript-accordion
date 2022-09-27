@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordion-container {
+    padding: 3rem;
+}
+
+.accordion {
+    background-color: #eee;
+}
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+.accordion-header:hover {
+    background: #aaa;
+}
+.accordion-header button {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+.accordion-header, .accordion-body {
+    padding: 1rem;
+}
+.accordion-body {
+    display: none;
+}
+
+.accordion.active .accordion-body {
+    display: block;
+}
